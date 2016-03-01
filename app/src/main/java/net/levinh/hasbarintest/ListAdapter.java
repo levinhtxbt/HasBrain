@@ -3,6 +3,7 @@ package net.levinh.hasbarintest;
 import android.app.Activity;
 import android.media.Image;
 import android.net.Uri;
+import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.TextUtils;
 import android.text.format.DateFormat;
@@ -14,6 +15,7 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -49,35 +51,39 @@ public class ListAdapter extends ArrayAdapter<Movie> implements Filterable{
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater= context.getLayoutInflater();
-        convertView=inflater.inflate(layoutId, null);
-        if(listMovie.size()>0 && position>=0)
+        final ViewHolder viewholder;
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(layoutId, parent, false);
+            viewholder =  new ViewHolder();
+            viewholder.imgRibbon = (ImageView) convertView.findViewById(R.id.imgRibbon);
+            viewholder.imgPoster = (ImageView) convertView.findViewById(R.id.imgPoster);
+            viewholder.txtTitle=(TextView) convertView.findViewById(R.id.txtTitleMovie);
+            viewholder.txtRate = (TextView)convertView.findViewById(R.id.txtRate);
+            viewholder.Watch_Now = (LinearLayout)convertView.findViewById(R.id.Watch_Now);
+            convertView.setTag(viewholder);
+        }else
         {
-            final ImageView imgRibbon = (ImageView) convertView.findViewById(R.id.imgRibbon);
-            final ImageView imgPoster = (ImageView) convertView.findViewById(R.id.imgPoster);
-            final TextView txtTitle=(TextView) convertView.findViewById(R.id.txtTitleMovie);
-            final TextView txtRate = (TextView)convertView.findViewById(R.id.txtRate);
-            final LinearLayout Watch_Now = (LinearLayout)convertView.findViewById(R.id.Watch_Now);
-            final Movie m=listMovie.get(position);
-            txtTitle.setText(m.getOriginalTitle());
-            Date release_date = m.getReleaseDate();
-            SimpleDateFormat df = new SimpleDateFormat("(yyyy)");
-            String year = String.valueOf(df.format(release_date));
-            txtTitle.setText(Html.fromHtml("<b>" + m.getOriginalTitle() + "</b> <font color=\"#cccccc\">" + year + "</font>"));
-            txtRate.setText(String.valueOf(m.getVoteAverage()));
-            String URL = "http://image.tmdb.org/t/p/w154"+m.getPosterPath();
-            //Picasso.with(context).load(URL).into(imgPoster);
-            imageLoader.DisplayImage(URL, imgPoster);
-            if(TinhThang(release_date)>3)
-                Watch_Now.setVisibility(View.VISIBLE);
-            if(m.getTagClick())
-                imgRibbon.setVisibility(View.VISIBLE);
-            else imgRibbon.setVisibility(View.INVISIBLE);
+            viewholder = (ViewHolder)convertView.getTag();
         }
+        final Movie m=listMovie.get(position);
+        viewholder.txtTitle.setText(m.getOriginalTitle());
+        Date release_date = m.getReleaseDate();
+        SimpleDateFormat df = new SimpleDateFormat("(yyyy)");
+        String year = String.valueOf(df.format(release_date));
+        viewholder.txtTitle.setText(Html.fromHtml("<b>" + m.getOriginalTitle() + "</b> <font color=\"#cccccc\">" + year + "</font>"));
+        viewholder.txtRate.setText(String.valueOf(m.getVoteAverage()));
+        String URL = "http://image.tmdb.org/t/p/w154"+m.getPosterPath();
+        imageLoader.DisplayImage(URL, viewholder.imgPoster);
+        if(Count_Month(release_date)>3)
+            viewholder.Watch_Now.setVisibility(View.VISIBLE);
+        else viewholder.Watch_Now.setVisibility(View.INVISIBLE);
+        if(m.getTagClick())
+            viewholder.imgRibbon.setVisibility(View.VISIBLE);
+        else viewholder.imgRibbon.setVisibility(View.INVISIBLE);
         return convertView;
     }
 
-    public long TinhThang(Date d){
+    public long Count_Month(Date d){
         long Months=0;
         Date d2 = new Date();
         try {
@@ -90,7 +96,14 @@ public class ListAdapter extends ArrayAdapter<Movie> implements Filterable{
         return Months;
     }
 
-
+    static class ViewHolder {
+        ImageView imgRibbon;
+       ImageView imgPoster;
+        TextView txtTitle;
+        TextView txtRate;
+        LinearLayout Watch_Now;
+    }
 
 
 }
+

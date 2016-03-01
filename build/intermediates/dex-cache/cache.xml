@@ -2,74 +2,74 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\libs\internal_impl-23.2.0.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="6e239441500605809818997dd63b62a947195f8c">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0-fa4457dbbc096b6f5f47118667493e860cf35284.jar" />
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.0-7f12ea18bbd27bc3b5c20185b5e8a19d4af80cb6.jar" />
     </item>
     <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\libs\picasso-2.5.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-8e74906e2fae34d3d2c8f9bf41db62ce10de9edc.jar" />
-    </item>
-    <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\design\23.2.0\jars\classes.jar"
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\design\23.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="1aa5b025efe97f5006f5be16d6ca67c6c3c0c0d8">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-d482bb89d7c94e62d5100db2ecfc9026717cff3b.jar" />
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-a2f1e1129d3ab685bc1099bc5f5aa1abae089ac2.jar" />
     </item>
     <item
-        jar="C:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jar="D:\GitHub\HasBrain\app\libs\picasso-2.5.2.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0-5d3a6b5a1bb732951b5916bfcc20d1ae3e0a5fcf.jar" />
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\picasso-2.5.2-5dd88442474bfd64cc96ced38509e50f263e7dc6.jar" />
+    </item>
+    <item
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-88d3c56a5dce1ecbd528adccf09d330b33baea06.jar" />
     </item>
     <item
         jar="C:\Users\Levin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="f1bc476cc167b18e66c297df599b2377131a8947">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\gson-2.6.2-a440a5b207cdf41d6e908d6a0686f8f22228088d.jar" />
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\gson-2.6.2-a440a5b207cdf41d6e908d6a0686f8f22228088d.jar" />
     </item>
     <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-1425d19c656865a921f78e3623cada25b7cc68d0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-3894580c38090b39cc1bc4bbefd2274c34595dbf.jar" />
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-6cd2c4def430f3b60bb8ec99db522e917961d534.jar" />
     </item>
     <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.0\jars\classes.jar"
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-c08151bfeb4e423541e60b4c3e4275b8c3ee98dd.jar" />
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-5ba5f8af616ea63586a0f7b521948ce9aa3e20e2.jar" />
     </item>
     <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="292a9fa091757208efa65e77eef63088247e51f3">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-23bbda806e5b0c252a75d2e26da15567f7f6e1b9.jar" />
-    </item>
-    <item
-        jar="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.0\jars\classes.jar"
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
         sha1="d4c936aa8c7d2522c82e3f1829c791d9e367f009">
-        <dex dex="C:\Users\Levin\Desktop\HasBrainTest\app\build\intermediates\pre-dexed\debug\classes-1593ce64923901aed008dcdd4309e906599745fb.jar" />
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-456c053cb0c2728ff3699044a184a05364749069.jar" />
+    </item>
+    <item
+        jar="D:\GitHub\HasBrain\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\classes-c92df50351c5ef578f7dfb388ffac55e17cc9e04.jar" />
+    </item>
+    <item
+        jar="C:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.0\support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="D:\GitHub\HasBrain\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.0-5d3a6b5a1bb732951b5916bfcc20d1ae3e0a5fcf.jar" />
     </item>
 
 </items>

@@ -28,7 +28,7 @@ public class ImageLoader {
     FileCache fileCache;
     private Map<ImageView, String> imageViews= Collections.synchronizedMap(new WeakHashMap<ImageView, String>());
     ExecutorService executorService;
-    Handler handler=new Handler();//handler to display images in UI thread
+    Handler handler=new Handler();
 
     public ImageLoader(Context context){
         fileCache=new FileCache(context);
@@ -59,12 +59,11 @@ public class ImageLoader {
     {
         File f=fileCache.getFile(url);
 
-        //from SD cache
         Bitmap b = decodeFile(f);
         if(b!=null)
             return b;
 
-        //from web
+
         try {
             Bitmap bitmap=null;
             URL imageUrl = new URL(url);
@@ -87,17 +86,17 @@ public class ImageLoader {
         }
     }
 
-    //decodes image and scales it to reduce memory consumption
+
     private Bitmap decodeFile(File f){
         try {
-            //decode image size
+
             BitmapFactory.Options o = new BitmapFactory.Options();
             o.inJustDecodeBounds = true;
             FileInputStream stream1=new FileInputStream(f);
             BitmapFactory.decodeStream(stream1,null,o);
             stream1.close();
 
-            //Find the correct scale value. It should be the power of 2.
+
             final int REQUIRED_SIZE=100;
             int width_tmp=o.outWidth, height_tmp=o.outHeight;
             int scale=1;
@@ -109,7 +108,7 @@ public class ImageLoader {
                 scale*=2;
             }
 
-            //decode with inSampleSize
+
             BitmapFactory.Options o2 = new BitmapFactory.Options();
             o2.inSampleSize=scale;
             FileInputStream stream2=new FileInputStream(f);
@@ -124,7 +123,6 @@ public class ImageLoader {
         return null;
     }
 
-    //Task for the queue
     private class PhotoToLoad
     {
         public String url;
@@ -165,7 +163,6 @@ public class ImageLoader {
         return false;
     }
 
-    //Used to display bitmap in the UI thread
     class BitmapDisplayer implements Runnable
     {
         Bitmap bitmap;
